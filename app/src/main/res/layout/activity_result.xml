@@ -1,57 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:orientation="horizontal"
-        android:layout_weight="1" >
+        android:layout_weight="0.2" >
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+        <TextView
+            style="@style/LabelText"
+            android:layout_weight="1"
+            android:hint="Coût du crédit"
+            tools:ignore="RtlCompat" />
+        <TextView
+            style="@style/LabelText"
+            android:hint="Mensualités"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="0.5" >
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+        <TextView
+            style="@style/ValueText"
+            android:id="@+id/et_loan_price"
+            android:hint="Loan "
+            android:inputType="numberDecimal"
+            tools:ignore="RtlCompat"/>
+
+        <TextView
+            style="@style/ValueText"
+            android:id="@+id/et_monthly_payment"
+            android:hint="Monthly payment"
+            android:inputType="numberDecimal"
+            tools:ignore="RtlCompat"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:orientation="horizontal"
-        android:layout_weight="1" >
+        android:layout_weight="0.2" >
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+        <TextView
+            style="@style/LabelText"
+            android:hint="Coût assurance"
+            tools:ignore="RtlCompat" />
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+        <TextView
+            style="@style/LabelText"
+            android:hint="Mensualités assurance"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="0.5" >
+
+        <TextView
+            style="@style/ValueText"
+            android:hint="insurance price"
+            android:id="@+id/et_credit_insurance"
+            android:inputType="numberDecimal"
+            tools:ignore="RtlCompat"/>
+        <TextView
+            style="@style/ValueText"
+            android:hint="insurance monthly"
+            android:id="@+id/et_monthly_insurance"
+            android:inputType="numberDecimal"
+            tools:ignore="RtlCompat"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:orientation="horizontal"
-        android:layout_weight="1" >
+        android:layout_weight="0.2" >
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+        <TextView
+            style="@style/LabelText"
+            android:hint="Frais notaire"
+            tools:ignore="RtlCompat" />
 
-        <Button
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+        <TextView
+            style="@style/LabelText"
+            android:hint="TOTAL ALL INCLUSIVE"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="0.5" >
+
+        <EditText
+            style="@style/ValueText"
+            android:id="@+id/et_notary_fees"
+            android:hint="notary fees"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            style="@style/ValueTextTotal"
+            android:id="@+id/et_total"
+            android:hint="Monthly payment"
+            android:inputType="numberDecimal"/>
     </LinearLayout>
 </LinearLayout>

@@ -7,4 +7,30 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LabelText" parent="TextAppearance.AppCompat">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/holo_orange_dark</item>
+    </style>
+
+    <style name="ValueText" parent="TextAppearance.AppCompat">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+
+    <style name="ValueTextTotal" parent="ValueText">
+        <item name="android:textColorHint">@android:color/holo_red_dark</item>
+    </style>
+
 </resources>

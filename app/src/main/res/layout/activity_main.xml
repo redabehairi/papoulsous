@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_amount"
-        android:hint="Amount"
+        android:hint="Capital emprunté"
         android:padding="10dp"
         android:inputType="numberDecimal"
         android:background="@android:color/white"/>
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_rate"
-        android:hint="Rate"
+        android:hint="Taux"
         android:padding="10dp"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
@@ -33,31 +33,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_loan_length"
-        android:hint="Loan length"
+        android:hint="Durée en années"
         android:padding="10dp"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
         android:background="@android:color/white"/>
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et_loan_price"
-        android:hint="Loan price"
+        android:id="@+id/et_ptz"
+        android:hint="PTZ"
         android:padding="10dp"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
         android:background="@android:color/white"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_monthly_payment"
-        android:hint="Monthly payment"
-        android:padding="10dp"
-        android:inputType="numberDecimal"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/white"/>
+
 
     <Button
         android:layout_width="wrap_content"
