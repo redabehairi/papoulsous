@@ -17,7 +17,7 @@
             tools:ignore="RtlCompat" />
         <TextView
             style="@style/LabelText"
-            android:hint="Mensualités"
+            android:hint="Mensualités hors assurances"
             tools:ignore="RtlCompat" />
     </LinearLayout>
     <LinearLayout
@@ -28,16 +28,16 @@
 
         <TextView
             style="@style/ValueText"
-            android:id="@+id/et_loan_price"
+            android:id="@+id/tv_loan_price"
             android:hint="Loan "
-            android:inputType="numberDecimal"
+            android:inputType="text"
             tools:ignore="RtlCompat"/>
 
         <TextView
             style="@style/ValueText"
-            android:id="@+id/et_monthly_payment"
+            android:id="@+id/tv_monthly_payment_no_insurance"
             android:hint="Monthly payment"
-            android:inputType="numberDecimal"
+            android:inputType="text"
             tools:ignore="RtlCompat"/>
     </LinearLayout>
 
@@ -66,14 +66,14 @@
         <TextView
             style="@style/ValueText"
             android:hint="insurance price"
-            android:id="@+id/et_credit_insurance"
-            android:inputType="numberDecimal"
+            android:id="@+id/tv_loan_insurance"
+            android:inputType="text"
             tools:ignore="RtlCompat"/>
         <TextView
             style="@style/ValueText"
             android:hint="insurance monthly"
-            android:id="@+id/et_monthly_insurance"
-            android:inputType="numberDecimal"
+            android:id="@+id/tv_monthly_insurance"
+            android:inputType="text"
             tools:ignore="RtlCompat"/>
     </LinearLayout>
 
@@ -101,14 +101,14 @@
 
         <EditText
             style="@style/ValueText"
-            android:id="@+id/et_notary_fees"
+            android:id="@+id/tv_notary_fees"
             android:hint="notary fees"
-            android:inputType="numberDecimal"/>
+            android:inputType="text"/>
 
         <EditText
             style="@style/ValueTextTotal"
-            android:id="@+id/et_total"
-            android:hint="Monthly payment"
-            android:inputType="numberDecimal"/>
+            android:id="@+id/tv_total"
+            android:hint="Coût total"
+            android:inputType="text"/>
     </LinearLayout>
 </LinearLayout>

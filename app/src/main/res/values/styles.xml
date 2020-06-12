@@ -27,10 +27,13 @@
         <item name="android:textAlignment">center</item>
         <item name="android:background">@android:color/white</item>
         <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
     </style>
 
     <style name="ValueTextTotal" parent="ValueText">
         <item name="android:textColorHint">@android:color/holo_red_dark</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:textSize">@dimen/total_text_size</item>
     </style>
 
 </resources>
